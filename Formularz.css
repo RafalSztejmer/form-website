@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Single Day";
+    font-size: 1.2rem;
+    
+}
+
+body {
+    background: url("img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    width: 30%;
+    height: 500px;
+    left: 550px;
+    top: 100px;
+    backdrop-filter: blur(5px);
+}
+h3 {
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, 0.897);
+    font-size: 1.4rem;
+}
+
+.body-form {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+form input {
+    background-color: white;
+    
+}
+.login-data input {
+    font-size: 1.1rem;
+    padding:2px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    background: transparent;
+    position: relative;
+    
+    
+}
+
+::placeholder {
+
+    text-align: center;
+    color: white
+    
+}
+.login-data p {
+    padding: 10px;
+}
+.login-data i {
+    color: white;
+}
+.sex, .age {
+    padding: 10px;
+    font-size: 1.1rem;
+    color: white;
+}
+.both-sex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    backdrop-filter: blur(5px);
+    right: 0;
+    width: 100%;
+    padding: 20px 100px ;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid black;
+}
+
+.nav-menu a {
+    padding: 3px 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.986);
+    border-radius: 30px;
+    height: 30px;
+    
+    
+    background: transparent;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.men:hover, .woman:hover {
+    text-decoration: underline;
+}
+.men {
+    padding-left: 10px;
+}
+.age {
+    font-size: 1.3rem;
+}
+input[type="date"] {
+    height: 30px; /* Ustawienie wysokości pola */
+    width: 200px; /* Ustawienie szerokości pola */
+    /* Inne style dla pola typu date */
+    background: transparent;
+    color: white;
+}
+.create-account {
+    padding: 10px;
+    
+}
+.create-account button {
+    font-size: 10px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: white;
+    background: transparent;
+    
+}
+
+.create-account button:hover {
+    text-decoration: underline;
+}
+.email i {
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+body {
+    height: 100vh;
+}
+
+    .nav-menu {
+        width: 100%;
+        justify-content: center;
+    }
+ 
+    
+
+    form {
+        width: 80%;
+        height: 70%;
+        left: 10%;
+        padding: 20px;
+    }
+
+    .create-account button {
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+}
+@media  screen and (min-width: 768px){
+    body {
+        height: 100vh;
+    
+    }
+
+    form {
+        width: 40%;
+        left: 30%;
+        height: 70%;
+        padding: 20px;
+    }
+    .create-account button {
+        font-size: 18px;
+        background-image: cover;
+    }
+}
+    

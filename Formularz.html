@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Formularz.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+
+    </nav>
+    
+    <form action="action.php" method="post" autocomplete="on">
+        <div class="body-form">
+            <h3>Uzupełnij formularz:</h3>
+            <div class="login-data">
+            <p> 
+                <i class='bx bx-envelope' ></i>
+                <input type="email" name="email" placeholder="Adres e-mail" >
+            </p>
+            <p class="name">
+                <i class='bx bx-user'></i>
+                <input type="name" name="name" placeholder="Imię">
+            </p>
+            <p>
+                <i class='bx bx-user'></i>
+                <input type="name" name="surname" placeholder="Nazwisko">
+            </p>
+            <p>
+                <i class='bx bx-lock-alt'></i>
+                <input type="password" name="password" placeholder="Hasło">
+            </p>
+            </div>
+            <div class="sex">
+                <p>Wybierz płeć:</p>
+                <div class="both-sex">
+                    <div class="woman">
+                        <label for="woman">Kobieta</label>
+                        <input type="checkbox" name="sex" id="woman">
+                    </div>
+                    <div class="men">
+                        <label for="men">Mężczyżna</label>
+                        <input type="checkbox" name="sex" id="men">
+                    </div>
+                </div>
+            </div>
+            <div class="age">
+                <input type="date" name="date" id="">
+            </div>
+            <div class="create-account">
+                <button type="submit">Utwórz konto</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
